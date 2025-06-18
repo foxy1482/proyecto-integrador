@@ -1,0 +1,66 @@
+:root {
+    --negro: #333;
+    --numeracion: #aaa;
+    --bordes: #aaa5;
+    --reservada: #7af;
+    --simbolo: #ffc197;
+}
+*
+{
+    margin: 0;
+}
+
+.fondo
+{
+    background-color: var(--negro);
+    color: #fff;
+    font-family: monospace;
+    font-size: .88rem;
+}
+.fondo > pre
+{
+    padding: 6rem 0 6rem 0;
+}
+.fondo ul
+{
+    list-style: none;
+}
+.linea:hover
+{
+    outline: 1px solid var(--bordes);
+}
+.numeracion
+{
+    user-select: none;
+    padding-right: 1rem;
+    color: var(--numeracion);
+}
+.palabra-reservada
+{
+    color: var(--reservada);
+}
+.simbolo-reservado
+{
+    color: var(--simbolo);
+}
+.button__volver
+{
+    font-family: Arial;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #f44;
+    transition: color .3s, background .23s;
+}
+.button__volver:hover
+{
+    cursor: pointer;
+    color: #f44;
+    background-color: #fff;
+}

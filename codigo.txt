@@ -1,0 +1,56 @@
+#include <LiquidCrystal.h>
+
+int estado;
+int valor;
+int pulsador = 2;
+int sensorTrigger = 8;
+int sensorEcho = 9;
+int pote = A0;
+
+int rs = 12;
+int e  = 11;
+
+int d7 = 7;
+int d6 = 6;
+int d5 = 5;
+int d4 = 4;
+
+LiquidCrystal lcd (rs,e,d4,d5,d6,d7);
+
+void setup() {
+  pinMode(pulsador, INPUT);
+  pinMode(pote, INPUT);
+
+  pinMode(sensorTrigger, OUTPUT);
+  pinMode(sensorEcho, INPUT);
+
+  lcd.begin(16, 2);
+
+}
+
+void loop() {
+  long tiempo;
+  long distancia;
+  digitalWrite(sensorTrigger, HIGH); 
+  delay(10);
+  digitalWrite(sensorTrigger, LOW);
+  tiempo = pulseIn(sensorEcho, HIGH); 
+  distancia = tiempo / 59;
+  estado = digitalRead(pulsador); 
+  if (estado == HIGH)
+  {
+
+    lcd.setCursor(0, 0);
+    lcd.clear();
+    lcd.print("Distancia: ");
+    lcd.print(distancia);
+    lcd.print("cm");
+    delay(2000);
+  }
+  else
+  {
+    lcd.clear();
+    lcd.print("SENSOR OFF");
+    delay(2000);
+  }
+}

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fuentes.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Proyecto Integrador Arduino</title>
+</head>
+<body>
+  <header class="nav__wrapper">
+    <div class="nav-container">
+      <div class="logo-wrapper">
+        <a href="/" class="nav__logo">
+          <div class="nav__logo-texto">proyecto integrador</div>
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="https://et24de17-caba.edu.ar/" target="_blank" class="nav-link">Escuela</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+      <div class="boton-wrapper">
+        <a href="codigo.html" class="boton-link">Ver el código →</a>
+      </div>
+    </div>
+    <div class="nav__linea"></div>
+  </header>
+  <section class="inicio__wrapper">
+    <div class="inicio-container">
+        <div class="inicio-titulo-container">
+
+          <div class="header-titulo">
+            <h1>sensor de distancia<br>CON ARDUINO<br></h1>
+          </div>
+
+        </div>
+        <div class="inicio-contenido">
+
+          <div class="inicio-descripcion">
+              <p class="parrafo">Este proyecto consiste en medir la distancia, por medio de un sensor conectado a un dispositivo <span>Arduino</span>. En esta página te explicamos paso a paso todo lo que necesitás saber...</p>
+          </div>
+          <div class="inicio-imagen">
+            <img src="img/sensor-distancia.jpg" class="hero-image">
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="dispositivos__wrapper">
+    <div class="dispositivos-container">
+      <div class="dispositivos-container-grid">
+        <div class="dispositivo claro">
+          <img src="img/arduino-uno.avif" class="dispositivo-img">
+          <h3 class="dispositivo-titulo titulo grande">ARDUINO UNO</h3>
+          <p class="parrafo">Es una plataforma de creación de electrónica de <span>código abierto</span>, basada en hardware y software libre.
+            Es una placa basada en un <span>microcontrolador ATMEL</span> (circuitos integrados que graban instrucciones).
+          </p>
+          <p class="parrafo">Las instrucciones se escriben
+            con el lenguaje de programación de Arduino IDE (el entorno de desarrollo).</p>
+        </div>
+        <div class="dispositivo">
+          <img src="img/protobooard.jpg" class="dispositivo-img">
+          <img src="img/protoboard2.webp" class="dispositivo-img" id="protoboard-img">
+          <h3 class="dispositivo-titulo titulo grande">PROTOBOARD</h3>
+          <p class="parrafo">Es una placa de pruebas, es un tablero compuesto por orificios que se encuentran conectados interna y eléctricamente entre sí.</p>
+          <p class="parrafo">Se divide en 3 zonas: <span>buses</span>, líneas rojas para cableado positivo, y líneas azules para GND, <span>pistas</span> que son los orificios restantes, se indican con filas enumeradas y columnas con letras, <span>canal central</span> que separan las zonas de conexión superior e inferiores</p>
+        </div>
+        <div class="dispositivo claro">
+          <img src="img/pulsador.webp" class="dispositivo-img">
+          <h3 class="dispositivo-titulo titulo grande">PULSADOR</h3>
+          <p class="parrafo">Un pulsador es un <span>interruptor temporal</span>, que bloquea el paso de la corriente eléctrica de forma momentánea. Tiene dos valores: o está pulsado, o no lo está.</p>
+          <p class="parrafo">Se trata de un mecanismo simple constituido por un par de contactos eléctricos que se unen o separan por medios mecánicos.</p>
+        </div>
+        <div class="dispositivo">
+          <img src="img/modulo-lcd.webp" class="dispositivo-img">
+          <h3 class="dispositivo-titulo titulo grande">MODULO DISPLAY LCD</h3>
+          <p class="parrafo">Un módulo display LCD, es una pantalla de cristal líquido, que posee una fuente de luz y la reflecta sobre la superficie, mostrando imagen por medio de píxeles.</p>
+          <p class="parrafo">Los cristales líquidos están intercalados entre <span>dos capas de vidrio</span>, una de las cuales tiene una <span>matriz de transistores</span> para suministrar el voltaje. Cuando se aplica voltaje a un transistor en particular, los cristales líquidos <span>cambian de orientación</span>, inclinando la luz de una manera específica.</p>
+        </div>
+        <div class="dispositivo claro">
+          <img src="img/ultrasonidos.jpg" class="dispositivo-img">
+          <h3 class="dispositivo-titulo titulo grande">SENSOR DE ULTRASONIDO</h3>
+          <p class="parrafo">El sensor de ultrasonido funciona como un dispositivo de <span>entrada-salida</span> mediante 2 transductores, es decir, emite un sonido ultrasónico, y espera que se produzca un rebote en un objeto presente, para utilizar su segundo transductor y captar el eco.</p>
+          <p class="parrafo">Permite calcular la <span>distancia</span>, ya que es proporcional al tiempo en que tarda en llegar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="videos__wrapper claro">
+    <div class="videos-container">
+          <h2 class="videos-titulo titulo enorme">VIDEOS DEL PROYECTO</h2>
+        <div class="videos-grid">
+          <div class="video">
+            <video class="video__reproductor" src="vid/conexionado.mp4" controls muted>
+            </video>
+            <h3 class="video__titulo">CONEXIONADO</h3>
+            <p class="video__desc">Este video explica cómo es el procedimiento y qué se conecta a la placa Arduino y protoboard.</p>
+          </div>
+          <div class="video">
+            <video class="video__reproductor" src="vid/programacion.mp4" controls muted></video>
+            <h3 class="video__titulo">PROGRAMACIÓN</h3>
+            <p class="video__desc">Este video explica para qué sirven y qué hacen las líneas de código, utilizando el compilador de Arduino.</p>
+          </div>
+          <div class="video">
+            <video class="video__reproductor" src="vid/resultado.mp4" controls muted></video>
+            <h3 class="video__titulo">RESULTADO</h3>
+            <p class="video__desc">Evidencia lo obtenido tras haber realizado el conexionado y la programación, con los componentes previamente explicados.</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+  <section class="footer__wrapper">
+    <footer class="footer">
+      <div class="footer-medio">
+        <div class="footer-logo titulo chico">proyecto integrador</div>
+        <a href="codigo.html" class="footer-link primero">Código</a>
+        <a href="contacto.html" class="footer-link segundo">Contacto</a>
+      </div>
+      <div class="footer-debajo">
+        <p class="footer-titulo parrafo">Este proyecto fue realizado para las materias de Taller de Tecnología y el Control y Taller de la Especialidad de la Escuela Técnica N°24</p>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

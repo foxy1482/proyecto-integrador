@@ -1,0 +1,155 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1
+{
+    text-align: center;
+    padding-top: 4rem; 
+}
+.contacto__wrapper
+{
+    width: 100dvw;
+    background-color: #f4f4f4;
+}
+.contacto__subwrapper
+{
+    margin: auto;
+    padding: 4rem auto 4rem auto;
+    max-width: 90rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.contacto__subwrapper > div
+{
+    margin: auto 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50rem;
+}
+/* Sección de contacto */
+.contacto__container
+{
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+.contacto__container > ul
+{
+    height: 100%;
+    margin: auto 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.contacto__item
+{
+    display: flex;
+    padding: .2rem;
+    border-bottom: 1px solid #0005;
+}
+.contacto__item-icon
+{
+    max-width: 3rem;
+    margin: 0;
+    padding: .5rem;
+    user-select: none;
+}
+.contacto__item-texto
+{
+    padding: .5rem;
+
+}
+/* Sección de formulario */
+
+.form__container
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.form__container > div
+{
+    display: flex;
+    width: 65%;
+    height: 70%;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 8px 5px #0002;
+    border-radius: 1.1rem;
+    margin: auto;
+}
+.form
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 1rem 4rem 1rem 4rem;
+}
+.form__item
+{
+    padding: .6rem 0 .6rem 0;
+}
+.form__input
+{
+    padding: .6rem;
+    font-size: .94rem;
+    font-family: Lato;
+    border: none;
+    outline: 1px solid #0002;
+    border-radius: .78rem;
+}
+textarea.form__input
+{
+    resize: none;
+    height: 5rem;
+}
+.form__submit
+{
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2b2;
+    border: none;
+    padding: .4rem 4rem .4rem 4rem;
+    margin: 1.4rem auto 1.4rem auto;
+    border-radius: .6rem;
+}
+.form__submit:hover{
+    cursor: pointer;
+    background-color: #fff;
+    outline: 1px solid #2b2;
+    color: #2b2;
+}
+
+@media screen and (min-width: 1000px) {
+    h1
+    {
+        text-align: start;
+    }
+    .contacto__wrapper
+    {
+        width: 100dvw;
+        background-color: #f4f4f4;
+    }
+    .contacto__subwrapper
+    {
+        margin: auto;
+        padding: 4rem auto 4rem auto;
+        max-width: 90rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+    .contacto__subwrapper > div
+    {
+        margin: auto 0 auto 0;
+        display: flex;
+        flex-direction: row;
+        min-height: 50rem;
+    }
+}

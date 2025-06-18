@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Este link es para tener los iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Contacto - Proyecto Integrador Arduino</title>
+</head>
+<body>
+    <header class="nav__wrapper">
+    <div class="nav-container">
+        <div class="logo-wrapper">
+        <a href="/" class="nav__logo">
+            <div class="nav__logo-texto">proyecto integrador</div>
+        </a>
+        </div>
+        <nav class="nav">
+        <a href="https://et24de17-caba.edu.ar/" target="_blank" class="nav-link">Escuela</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <div class="boton-wrapper">
+        <a href="codigo.html" class="boton-link">Ver el código →</a>
+        </div>
+    </div>
+    <div class="nav__linea"></div>
+    </header>
+    <section class="contacto__wrapper">
+    <div class="contacto__subwrapper">
+        <h1>Contacto</h1>
+    <div>
+        <div class="contacto__container">
+            <ul>
+            <li class="contacto__item">
+                <span class="material-symbols-outlined contacto__item-icon">mail</span>
+                <a href="mailto:colegiotobiaslabo@gmail.com" class="contacto__item-texto">colegiotobiaslabo@gmail.com</a>
+            </li>
+            <li class="contacto__item">
+                <span class="material-symbols-outlined contacto__item-icon">call</span>
+                <span class="contacto__item-texto">1133352008</span>
+            </li>
+            <li class="contacto__item">
+                <span class="material-symbols-outlined contacto__item-icon">location_on</span>
+                <span class="contacto__item-texto">CABA</span>
+            </li>
+        </ul>
+        </div>
+        <div class="form__container">
+            <div>
+                <form action="" method="POST" class="form">
+                <label for="nombre" class="form__item form__label">Nombre</label>
+                <input type="text" name="nombre" class="form__item form__input" id="nombre" placeholder="Nombre">
+                <label for="email" class="form__item form__label">Email</label>
+                <input type="email" name="email" class="form__item form__input" id="email" placeholder="Email">
+                <label for="telefono" class="form__item form__">Teléfono</label>
+                <input type="number" name="telefono" class="form__item form__input" id="telefono" placeholder="N° de teléfono">
+                <label for="mensaje" class="form__item form__label">Mensaje</label>
+                <textarea name="mensaje" class="form__item form__input" id="mensaje" placeholder="Mensaje..."></textarea>
+                    
+                <input type="submit" value="Enviar" class="form__submit">
+            </form>
+            </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="footer__wrapper">
+    <footer class="footer">
+      <div class="footer-medio">
+        <div class="footer-logo titulo chico">proyecto integrador</div>
+        <a href="codigo.html" class="footer-link primero">Código</a>
+        <a href="contacto.html" class="footer-link segundo">Contacto</a>
+      </div>
+      <div class="footer-debajo">
+        <p class="footer-titulo parrafo">Este proyecto fue realizado para la materia de Taller de Tecnología y el Control de la Escuela Técnica N°24</p>
+      </div>
+    </footer>
+  </section>
+    <script src="js/contacto.js"></script>
+</body>
+</html>
