@@ -3,7 +3,7 @@ const ul = document.querySelector(".fondo > pre > ul");
 
 const cargarCodigo = ()=>
 {
-    fetch('../codigo.txt')
+    fetch('/proyecto-integrador/codigo.txt')
         .then(res => res.text())
         .then(data => {
             const lineas = data.split("\n"); //Esto separa cada línea
